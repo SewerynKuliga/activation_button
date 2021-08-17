@@ -1,6 +1,13 @@
 import "./ButtonToClick.css";
-import Button from '@material-ui/core/Button';
 import React from 'react';
+import { withStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+
+const StyledButton = withStyles({
+    root: {
+        borderRadius: 199,
+    }
+})(Button);
 
 function ButtonToClick() {
 
@@ -9,13 +16,14 @@ function ButtonToClick() {
     }
     return (
         <div className="buttonToClick">
-            <Button
+            <StyledButton
                 variant="contained"
                 color="secondary"
-                onClick={handleClick}
+                onClick={handleClick}  
+                className="button_styled"
             >
                 <h1>Kliknij mnie :)</h1>
-            </Button>
+            </StyledButton>
         </div>
     )
 }
