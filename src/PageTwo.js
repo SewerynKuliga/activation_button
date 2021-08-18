@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import klopsikiSmall from './image/klopsikiSmall.PNG';
-import klopsikiHuge from './image/klopsikiHuge.PNG';
-import klopsikiPlate from './image/klopsikiPlate.PNG';
 import Ingredients from './Ingredients';
 import Preparation from './Preparation';
+import KlopsikiImages from './KlopsikiImages';
+import GoToRightSide from './GoToRightSide';
 
 
 const KlopsikiTop = styled.img`
@@ -19,6 +19,12 @@ const Headline = styled.h1`
     display: block;
     margin: 30px auto;
     width: fit-content;
+`
+
+const Text = styled.div`
+    width: 100%;
+    margin-top: 5%;
+    min-width: 600px;
 `
 
 const Footer = styled.footer`
@@ -37,15 +43,14 @@ function PageTwo() {
                 Domowy przepis na <em>klopsiki w sosie pomidorowym</em>
             </Headline>
 
-            <Ingredients />
-            <Preparation />
+            <Text>
+                <Ingredients />
+                <Preparation />
+            </Text>
 
-            <h3>PROPOZYCJA PODANIA:</h3>
-            <h4>Z makaronem oraz tartym serem</h4>
+            <KlopsikiImages />
 
-            <img src={klopsikiHuge} alt="" width="600" />
-            <img src={klopsikiPlate} alt="" width="600" />
-
+            <GoToRightSide />
 
             <Footer>Zdjęcia oraz napisy zaczerpnięte z kwestiasmaku.com</Footer>
         </div>
