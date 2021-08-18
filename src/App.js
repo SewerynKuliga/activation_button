@@ -1,22 +1,35 @@
 import React from 'react';
 import './App.css';
-import ButtonToClick from './ButtonToClick';
-import Person from './Person';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import PageOne from './PageOne';
+import PageTwo from './PageTwo';
+import PageThree from './PageThree';
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+      <Switch>
 
-      <ButtonToClick />
+        <Route exact path='/'>
+          <PageOne />
+        </Route>
 
-      <Person />
+        <Route exact path='/pulpeciki'>
+          <PageTwo />
+        </Route>
 
-      {/* twarz meme */}
-      {/* just do it po 10 sek */}
-      {/* <img src="https://media.giphy.com/media/GcSqyYa2aF8dy/source.gif" alt="gif" /> */}
+        <Route exact path='/pulpeciki2'>
+          <PageThree />
+        </Route>
 
-    </div>
-  );
+      </Switch>
+    
+
+    {/* twarz meme */ }
+    {/* just do it po 10 sek */ }
+    {/* <img src="https://media.giphy.com/media/GcSqyYa2aF8dy/source.gif" alt="gif" /> */ }
+  </Router>
+  )
 }
 
 export default App;

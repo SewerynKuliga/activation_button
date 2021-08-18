@@ -6,9 +6,9 @@ import styled from 'styled-components';
 const Image = styled.img`
     position: relative;
     display: block;
-    margin-left: 55%;
-    margin-top: 10px;
     width: 300px;
+    margin-top: 10px;
+    float: right;
 `
 
 function Person() {
