@@ -1,0 +1,14 @@
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.expandMoreIcon {
+    transform: translateY(17px);
+    margin-left: 20px;
+    background-color: red;
+    border-radius: 3px;
+}

@@ -34,6 +34,7 @@ const Footer = styled.footer`
 function PageTwo() {
     return (
         <div className='pageTwo'>
+
             <KlopsikiTop
                 src={klopsikiSmall}
                 alt="małe zdjęcie klopsików"
