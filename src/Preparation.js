@@ -2,13 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
-
 const Container = styled.div`
     position: relative;
     display: inline-block;
     width: 75%;
     margin-left: 5%;
-    `
+`
 
 function Preparation() {
     return (
@@ -51,4 +50,4 @@ function Preparation() {
     )
 }
 
-export default Preparation
+export default Preparation;

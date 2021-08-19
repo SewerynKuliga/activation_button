@@ -2,7 +2,6 @@ import React from 'react';
 import speakingPerson from './image/speakingPerson.png';
 import styled from 'styled-components';
 
-
 const Image = styled.img`
     position: relative;
     display: block;
@@ -13,12 +12,10 @@ const Image = styled.img`
 
 function Person() {
     return (
-        
         <Image 
             src={speakingPerson} 
             alt="mówiąca osoba" 
         />
-        
     )
 }
 

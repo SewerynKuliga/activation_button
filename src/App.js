@@ -23,12 +23,12 @@ function App() {
         </Route>
 
       </Switch>
-    
 
-    {/* twarz meme */ }
-    {/* just do it po 10 sek */ }
-    {/* <img src="https://media.giphy.com/media/GcSqyYa2aF8dy/source.gif" alt="gif" /> */ }
-  </Router>
+
+      {/* twarz meme */}
+      {/* just do it po 10 sek */}
+      {/* <img src="https://media.giphy.com/media/GcSqyYa2aF8dy/source.gif" alt="gif" /> */}
+    </Router>
   )
 }
 

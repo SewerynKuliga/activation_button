@@ -5,7 +5,7 @@ import Ingredients from './Ingredients';
 import Preparation from './Preparation';
 import KlopsikiImages from './KlopsikiImages';
 import GoToRightSide from './GoToRightSide';
-
+import "./PageTwo.css";
 
 const KlopsikiTop = styled.img`
     display: block;

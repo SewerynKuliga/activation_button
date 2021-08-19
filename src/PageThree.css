@@ -1,4 +1,10 @@
-body {
+.pageThree {
     background: url(./image/matrix.jpg) no-repeat;
-    background-size: cover;
+    background-size: auto;
+    color: #ffffff;
+}
+
+.accountCircle {
+    border-bottom: 2px solid red;
+    color: rgba(255, 0, 0, 0.603);
 }

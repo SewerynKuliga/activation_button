@@ -7,7 +7,6 @@ import './GoToRightSide.css';
 import { useHistory } from 'react-router';
 import Instruction from './Instruction';
 
-
 const Fingerprint = styled.div`
     margin-top: 15%;
     margin-bottom: 10%;
