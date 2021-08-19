@@ -16,7 +16,7 @@ function ButtonToClick() {
     function handleClick() {
         history.push('/pulpeciki');
     }
-    
+
     return (
         <div className="buttonToClick">
             <StyledButton
@@ -26,7 +26,7 @@ function ButtonToClick() {
                 className="button_styled"
             >
                 <h1>Kliknij mnie :)</h1>
-            </StyledButton>
+            </StyledButton>                   {/* Przycisk przekierowujący na następną stronę  */}
         </div>
     )
 };

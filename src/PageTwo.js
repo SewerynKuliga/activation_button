@@ -45,13 +45,13 @@ function PageTwo() {
             </Headline>
 
             <Text>
-                <Ingredients />
-                <Preparation />
+                 <Ingredients />                {/*  Składniki na klopsiki */}
+                 <Preparation />               {/* Formuła przygotowania klopsików  */}
             </Text>
 
-            <KlopsikiImages />
+            <KlopsikiImages />                 {/* Zdjęcia klopsików (2x) */}
 
-            <GoToRightSide />
+            <GoToRightSide />                  {/* Instrukcja wraz z przyciskiem przekierowującym */}
 
             <Footer>Zdjęcia oraz napisy zaczerpnięte z kwestiasmaku.com</Footer>
         </div>

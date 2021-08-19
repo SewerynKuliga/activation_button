@@ -15,8 +15,8 @@ function PageOne() {
     return (
         <Container>
 
-            <ButtonToClick />
-            <Person />
+            <ButtonToClick />         {/* Przycisk przekierowujacy na następną stronę oraz jego stylizacja */}
+            <Person />                {/* Grafika osoby */}
 
         </Container>
     )

@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import { withStyles } from '@material-ui/styles';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import './GoToRightSide.css';
+import { useHistory } from 'react-router';
+import Instruction from './Instruction';
 
 
 const Fingerprint = styled.div`
@@ -20,7 +22,7 @@ const ExpandMore = withStyles({
     }
 })(ExpandMoreIcon);
 
-const Instruction = styled.nav`
+const InstructionBox = styled.nav`
     width: 800px;
     height: 400px;
     background-color: grey;
@@ -32,48 +34,55 @@ const FingerprintIconBot = withStyles({
     root: {
         width: 200,
         height: 200,
-        marginLeft: 40,
+        marginLeft: 250,
     }
 })(FingerprintIcon);
 
-function checkFingerprint(e) {
-    console.log(e.keyCode)
-};
-
 function GoToRightSide() {
     const [clicked, setClicked] = useState(false);
+    const [press, setPress] = useState(false);
+    let history = useHistory();
 
-    function yourChoice() {
+    function openMenu() {
         setClicked(!clicked)
+    };
+
+    function changeColor() {
+        setPress(!press)
+    };
+
+    function checkFingerprint(e) {
+        console.log(e.keyCode);
+
+        if (e.keyCode === 79)
+            history.push('/pulpeciki1');
+
     };
 
     return (
         <Fingerprint>
-
+            <h1>Hej! Czekaj!</h1>
             <Text>
                 Skoro zaznałeś lekkiego zmieszania, zapraszam cię na prawidłową już stronę.
             </Text>
 
-            <ExpandMore 
-                onClick={yourChoice}
+            <ExpandMore
+                onClick={openMenu}
                 className="expandMoreIcon"
             />
 
-            <Instruction
-                className={clicked ? "hide" : "show"}
+            <InstructionBox
+                className={clicked ? "show" : "hide"}
             >
-                <h3>Instrukcja: </h3>
-                <ol>
-                    <li>Klinkij w ikonkę linii papilarnych na pod instrukcją (wyświetli się okno)</li> <br />
-                    <li>Przyłóż palec do klawisza z literką "O" na klawiaturze i mocno przyciśnij, aby zeskanować twoje linie papilarne.</li> <br />
-                    <li>Jeżeli jesteś znany systemowi zostaniesz przekierowany w odpowiednie miejsce.</li>
-                </ol>
+                <Instruction />
 
                 <FingerprintIconBot
                     onKeyDown={checkFingerprint}
                     tabIndex="0"
+                    onClick={changeColor}
+                    className={press ? "green" : "black"}
                 />
-            </Instruction>
+            </InstructionBox>
         </Fingerprint>
     )
 }

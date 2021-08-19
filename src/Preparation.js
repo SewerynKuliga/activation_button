@@ -17,7 +17,7 @@ function Preparation() {
                 PRZYGOTOWANIE:
             </h3>
 
-            <p> 
+            <p>
                 <ArrowRightIcon />
                 Na patelni na łyżce oliwy zeszklić pokrojoną w kosteczkę cebulę, pod koniec dodać starty 1 ząbek czosnku oraz 1 łyżkę masła,
                 suszone oregano i paprykę w proszku, wymieszać i chwilę razem podsmażyć. Zdjąć z patelni i zmielić razem z mięsem

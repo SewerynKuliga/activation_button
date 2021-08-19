@@ -18,7 +18,7 @@ function App() {
           <PageTwo />
         </Route>
 
-        <Route exact path='/pulpeciki2'>
+        <Route exact path='/pulpeciki1'>
           <PageThree />
         </Route>
 
